@@ -18,12 +18,12 @@
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
     </script>
     <script type="text/babel">
-        function App() {
+        function App(props) {
             return (
               <div>  
                 <header>
                     <section>                    
-                        <h1>Sally Barbosa</h1>                    
+                        <h1>{props.name}</h1>                    
                         <div><a href="mailto:sally-barbosa@gmail.com">sally-barbosa@gmail.com</a></div>
                         <address>555-555-5555</address>
                         <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6cPwMdMOy7lKaTiHzE8eLiALxKVmmcKWv-rg7qiATjGmgo0ugGA" alt= 'Sally resume photo' />
@@ -34,9 +34,9 @@
                     <h2>Education: University of California</h2>     
                     <ul>
                         <li><h3>ABC Company, Accountant, 2012-2013</h3></li>
-                        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate, voluptatibus veniam doloribus consectetur quia! Quae, eveniet?<br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate, voluptatibus veniam doloribus consectetur quia! Quae, eveniet?</p>
                         <li><h3>CDE Company, intern, 2011-2012</h3></li>
-                        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate, voluptatibus veniam doloribus consectetur quia! Quae, eveniet?<br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate, voluptatibus veniam doloribus consectetur quia! Quae, eveniet?</p>
                     </ul>
                 </main>
               </div>    
@@ -44,7 +44,7 @@
         };
       
         ReactDOM.render(
-            <App />,
+            <App name='Sally Barbosa'/>,
             document.querySelector('#resume-root')
         );
     </script>
